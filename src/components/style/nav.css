@@ -1,0 +1,51 @@
+body{
+    font-family: "Figtree", sans-serif;
+}
+.ok{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #D9D9D9;
+    border-radius: 15px;
+    width: 90%;
+}
+
+nav .left{
+    display: flex;
+    justify-content: center;
+}
+
+nav .mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .right .login{
+    width: 13dvh;
+    height: 6dvh;
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    border-radius: 15px;
+}
+
+
+nav .right .try{
+    width: 13dvh;
+    height: 6dvh;
+    background-color: #8D6E63;
+    border: 1px solid #D9D9D9;
+    border-radius: 15px;
+    color: white;
+}

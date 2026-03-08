@@ -1,0 +1,57 @@
+body{
+  background-image: linear-gradient(to bottom, #FFFFFF 60%, #8D6E63 100%);
+    font-family: "Figtree", sans-serif;
+  
+
+  min-height: 100vh;
+
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    gap:  3rem;
+    width: 60%;
+    margin-left: 13%;
+    margin-top: 10dvh;
+}
+
+.home .left {
+    width: 23rem;
+}
+
+.home .left .c{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+}
+.home .left .text{
+    margin: 0;
+    padding: 0;
+}
+.home .left .des{
+    font-size: 1rem;
+}
+.home .left .scan{
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+    padding: 0;
+    font-size: 3rem;
+
+}
+
+.home .left button{
+    width: 6rem;
+    height: 2.5rem;
+    background-color: #8D6E63;
+    border: 1px solid #D9D9D9;
+    border-radius: 15px;
+    color: white;
+    margin-left: 3%;
+}
+
+
+.home .right img{
+    width: 14rem;
+}
