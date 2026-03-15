@@ -1,9 +1,15 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landingpage from './landingpage.jsx'
+import Login from './pages/login.jsx'
+import Register from './pages/register.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Landingpage />
-  </StrictMode>,
+  <BrowserRouter>
+  <Routes>
+        <Route path="/" element={<Landingpage/>}/>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+  </Routes>
+  </BrowserRouter>
 )

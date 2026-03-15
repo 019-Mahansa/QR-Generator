@@ -7,6 +7,10 @@ body{
 
 }
 
+button{
+    cursor: pointer;
+}
+
 .home{
     display: flex;
     justify-content: center;

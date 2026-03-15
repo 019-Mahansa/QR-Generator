@@ -2,8 +2,11 @@ import React from "react";
 import Nav from "./components/nav";
 import qr from "./assets/dummyQR.png";
 import "./landingpage.css"
+import { useNavigate } from "react-router-dom";
+
 
 function Landingpage(){
+    const navigate = useNavigate()
     return(
         <>
         <Nav/>
@@ -16,7 +19,7 @@ function Landingpage(){
                     </div>
 
                     <p className="des">Generate QR codes from any URL in seconds, easier to share</p>
-                    <button>try for free</button>
+                    <button onClick={() => navigate("/login")}>try for free</button>
                 </div>
                 <div className="right">
                     <img src={qr} alt="gambar" />

@@ -1,13 +1,15 @@
 import React from "react";
 import './style/nav.css'
+import { useNavigate } from "react-router-dom";
 
 function Nav(){
+    const navigate = useNavigate()
     return(
         <>
             <div className="ok">
                 <nav>
                     <div className="left">
-                        <h1>Title</h1>
+                        <h1>Digito</h1>
                     </div>
                     <div className="mid">
                         <p>item1</p>
@@ -16,7 +18,7 @@ function Nav(){
                         <p>item4</p>
                     </div>
                     <div className="right">
-                        <button className="login">Login</button>
+                        <button onClick={() => navigate("/login")}className="login">Login</button>
                         <button className="try">Try for free</button>
                     </div>
                 </nav>
