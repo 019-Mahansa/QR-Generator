@@ -57,3 +57,39 @@ body{
     font-size: 0.4rem;
     color:  white;
 }
+@media (max-width: 768px) {
+    .containers {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+ 
+    .containers .one,
+    .containers .two,
+    .containers .three,
+    .containers .four {
+        flex: 1 1 40%;
+        min-width: 140px;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .containers {
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 1.25rem;
+    }
+ 
+    .containers .one,
+    .containers .two,
+    .containers .three,
+    .containers .four {
+        flex: 1 1 100%;
+    }
+ 
+    .licensi {
+        font-size: 0.55rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+}

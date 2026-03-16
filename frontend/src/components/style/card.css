@@ -115,3 +115,26 @@
 .plan .button:hover, .plan .button:focus {
   background-color: #5f4a42;
 }
+
+@media (max-width: 768px) {
+    .plan {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .plan .pricing {
+        font-size: 1rem;
+        padding: 0.5em 0.625em;
+    }
+ 
+    .plan .title {
+        font-size: 1.1rem;
+    }
+ 
+    .plan .button {
+        font-size: 1rem;
+    }
+}
+ 

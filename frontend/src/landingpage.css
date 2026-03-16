@@ -65,3 +65,65 @@ button{
 .home .right img{
     width: 14rem;
 }
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .home {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-left: 5%;
+        gap: 2rem;
+        margin-top: 6dvh;
+    }
+
+    .home .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home .left .c {
+        font-size: 2.25rem;
+    }
+
+    .home .left .scan {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .home .left button {
+        margin-left: 0;
+    }
+
+    .home .right img {
+        width: 12rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 4dvh;
+        gap: 1.5rem;
+    }
+
+    .home .left .c {
+        font-size: 1.75rem;
+    }
+
+    .home .left .des {
+        font-size: 0.9rem;
+    }
+
+    .home .right img {
+        width: 9rem;
+    }
+}
