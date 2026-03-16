@@ -21,7 +21,7 @@ function Landingpage(){
                     </div>
 
                     <p className="des">Generate QR codes from any URL in seconds, easier to share</p>
-                    <button onClick={() => navigate("/login")}>try for free</button>
+                    <button onClick={() => navigate("/qr-code")}>try for free</button>
                 </div>
                 <div className="right">
                     <img src={qr} alt="gambar" />

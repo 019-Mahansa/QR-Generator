@@ -23,6 +23,12 @@ nav .mid{
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+}
+
+nav .mid .a{
+    color: black;
+    text-decoration: none;
 }
 
 nav .right{
