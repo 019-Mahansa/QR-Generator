@@ -16,8 +16,8 @@ function Landingpage(){
             <div className="home">
                 <div className="left">
                     <div className="text">
-                        <h1 className="c">Click Less. </h1>
-                        <h1 className="scan">Scan More</h1>
+                        <h1 className="c">Click Less</h1>
+                        <h1 className="scan">Scan More!</h1>
                     </div>
 
                     <p className="des">Generate QR codes from any URL in seconds, easier to share</p>

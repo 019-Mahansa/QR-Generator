@@ -51,7 +51,7 @@ nav .right .try{
 }
 
 @media (max-width: 768px) {
-    nav {
+    /* nav {
         flex-direction: column;
         align-items: center;
         gap: 12px;
@@ -74,19 +74,23 @@ nav .right .try{
     nav .right .try {
         width: 5rem;
         height: 2.5rem;
-    }
+    } */
 }
  
 @media (max-width: 480px) {
     nav .mid {
-        gap: 8px;
-        font-size: 0.875rem;
+        display: none;
     }
- 
+/*  
     nav .right .login,
     nav .right .try {
         width: 4.5rem;
         height: 2.25rem;
         font-size: 0.8rem;
+    } */
+
+    nav .left{
+        font-size: 1rem;
     }
+
 }
