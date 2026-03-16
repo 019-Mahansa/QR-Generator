@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.containers{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    background-color: #8D6E63;
+    margin-top: 5rem;
+    padding: 1rem;
+
+
+}
+
+.containers .one{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+
+}
+
+.Title{
+    font-weight: bold;
+}
+
+.containers .two{
+    display: flex;
+    gap: 30px;
+    gap: 1.5rem;
+        flex-direction: column;
+}
+
+.containers .three{
+    display: flex;
+    gap: 30px;
+    gap: 1.5rem;
+        flex-direction: column;
+    
+}
+
+.containers .four{
+    display: flex;
+    gap: 30px;
+    gap: 1.5rem;
+        flex-direction: column;
+}
+
+.licensi{
+    display: flex;
+    justify-content: center;
+    font-size: 0.4rem;
+    color:  white;
+}
