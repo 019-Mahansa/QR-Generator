@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./components/nav";
 import qr from "./assets/dummyQR.png";
 import "./landingpage.css"
+import Card from "./components/card";
 import { useNavigate } from "react-router-dom";
 
 
@@ -26,6 +27,18 @@ function Landingpage(){
 
                 </div>
             </div>
+                         {/* <Card
+                price="$2"
+                period="m"
+                title="Basic"
+                description="This plan is for those who want get fully accesed to <strong>QR-Generator</strong>"
+                features={[
+                    "Unlimited <strong>Generate</strong>",
+                    "History",
+                ]}
+                buttonText="Choose plan"
+                buttonHref="#"
+            /> */}
         </div>
         </>
     )
