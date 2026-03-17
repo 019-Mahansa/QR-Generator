@@ -18,12 +18,12 @@ function QrGenerator(){
                     </svg>
                 </div>
                 <p className="p">QR Generator</p>
-                <span className="des">Ubah link menjadi kode QR dalam sekejap</span>
+                <span className="des">Turn your link into a QR in a second!</span>
 
             </div>
             <div className="card">
                 <div className="inside-card">
-                    <span>Masukan URL</span>
+                    <span>Enter URL</span>
 
                     <div className="duo">
                         <input type="text" placeholder="https://example.com"></input>
@@ -32,7 +32,7 @@ function QrGenerator(){
 
                     <div className="duo">
                         <div className="warnaOr">
-                            <span>warnaOr</span>
+                            <span>colorOr</span>
                             <input type="color" value={warna} onChange={(e) => setwarna(e.target.value)}></input>
                         </div>
                         <div className="backgroundOr">
@@ -45,7 +45,7 @@ function QrGenerator(){
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 3h7v7H3V3zm2 2v3h3V5H5zm9-2h7v7h-7V3zm2 2v3h3V5h-3zM3 14h7v7H3v-7zm2 2v3h3v-3H5zm13-2h2v2h-2v-2zm-4 0h2v2h-2v-2zm2 2h2v2h-2v-2zm-2 2h2v2h-2v-2zm2 2h2v2h-2v-2zm2-2h2v2h-2v-2z"/>
                         </svg>
-                        <p>QR code akan muncul di sini</p>                      
+                        <p>QR code will append in here</p>                      
                     </div>
                 </div>
 
