@@ -167,3 +167,34 @@
     height: 7rem;
     fill: #C4AFA3;
 }
+
+@media (max-width: 768px) {
+    .containerr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-left: 12%;
+        margin-top: 6dvh;
+    }
+
+    .containerr .card{
+        width: 80%;
+    }
+
+    .container .card .duo button{
+        flex-direction: column;
+    }
+
+    .caontainerr .card .duo input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .containerr .card .duo button {
+        box-sizing: border-box;
+        width: 100%;
+        height: 3rem;
+        font-size: 0.6rem;
+    }
+}
