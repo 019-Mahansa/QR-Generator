@@ -26,7 +26,7 @@ function QrGenerator(){
                     <span>Enter URL</span>
 
                     <div className="duo">
-                        <input type="text" placeholder="https://example.com"></input>
+                        <input type="text" placeholder="https://example.com" ></input>
                         <button className="generate">Generate</button>
                     </div>
 

@@ -182,19 +182,19 @@
         width: 80%;
     }
 
-    .container .card .duo button{
+    .containerr .card .duo {
         flex-direction: column;
     }
 
-    .caontainerr .card .duo input{
+    .containerr .card .duo input{
         width: 100%;
         box-sizing: border-box;
     }
 
+
     .containerr .card .duo button {
-        box-sizing: border-box;
         width: 100%;
-        height: 3rem;
+        height: 2rem;
         font-size: 0.6rem;
     }
 }
