@@ -10,7 +10,7 @@ function Nav(){
             <div className="ok">
                 <nav>
                     <div className="left">
-                        <h1>Digito</h1>
+                        <Link to = {"/"} className="b"> <h1>Digito</h1> </Link>
                     </div>
                     <div className="mid">
                         <Link to={"/"}  className="a">Home</Link>

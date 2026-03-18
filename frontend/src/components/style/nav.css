@@ -16,6 +16,12 @@ nav{
 nav .left{
     display: flex;
     justify-content: center;
+
+}
+
+nav .left .b{
+    text-decoration: none;
+    color: black;
 }
 
 nav .mid{
