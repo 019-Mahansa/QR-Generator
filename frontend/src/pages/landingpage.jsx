@@ -1,10 +1,10 @@
 import React from "react";
-import Nav from "./components/nav";
+import Nav from "../components/nav";
 import qr from "./assets/dummyQR.png";
-import "./landingpage.css"
-import Card from "./components/card";
+import "./styles/landingpage.css"
+import Card from "../components/card";
 import { useNavigate } from "react-router-dom";
-import Footer from "./components/footer";
+import Footer from "../components/footer";
 
 
 function Landingpage(){
