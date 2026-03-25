@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Landingpage from './pages/landingpage.jsx'
+import Landingpage from './landingpage.jsx'
 import Login from './pages/login.jsx'
 import Register from './pages/register.jsx';
 import QrGenerator from './pages/qrGenerator.jsx';
