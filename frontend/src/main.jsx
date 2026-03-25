@@ -4,7 +4,7 @@ import Landingpage from './pages/landingpage.jsx'
 import Login from './pages/login.jsx'
 import Register from './pages/register.jsx';
 import QrGenerator from './pages/qrGenerator.jsx';
-import App from './app.jsx';
+
 
 createRoot(document.getElementById('root')).render(
 
