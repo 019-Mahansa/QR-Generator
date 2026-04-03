@@ -20,7 +20,7 @@ function Nav(){
                     </div>
                     <div className="right">
                         <button onClick={() => navigate("/login")}className="login">Login</button>
-                        <button className="try">Try for free</button>
+                        <button className="try" onClick={()=> navigate("/qr-code")}>Try for free</button>
                     </div>
                 </nav>
             </div>

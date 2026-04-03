@@ -4,6 +4,7 @@ import Landingpage from './landingpage.jsx'
 import Login from './pages/login.jsx'
 import Register from './pages/register.jsx';
 import QrGenerator from './pages/qrGenerator.jsx';
+import About from './pages/about.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Landingpage/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path='/about' element={<About/>}/>
   </Routes>
   </BrowserRouter>
 )

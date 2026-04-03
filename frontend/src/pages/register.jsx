@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/login.css";
 import InputText from "../components/inputText";
+import Nav from "../components/nav";
 
 function Register() {
   const [showPassword, setShowPassword] = useState(false);
@@ -9,6 +10,7 @@ function Register() {
 
   return (
     <>
+    <Nav/>
       <div className="login-page">
         <div className="login-wrapper">
 

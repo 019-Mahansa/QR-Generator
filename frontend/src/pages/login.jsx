@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/login.css";
 import InputText from "../components/inputText";
+import Nav from "../components/nav";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
+    <>
+    <Nav/>
     <div className="login-page">
       <div className="login-wrapper">
 
@@ -108,6 +111,7 @@ function Login() {
 
       </div>
     </div>
+    </>
   );
 }
 
