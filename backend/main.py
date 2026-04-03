@@ -1,32 +1,22 @@
-from flask import Flask, jsonify
-# from flask_cors import CORS
+from flask import Flask, send_file, request
+from flask_cors import CORS
+from io import BytesIO
 import qrcode
 import os
 
 app = Flask(__name__)
-# CORS(app)
+CORS(app)
 
-def pengaturan():
-    penyimpanan = "resultQR"
-    namaFIle = "dummy1.jpg"
+@app.route('/qr-code')
+def makeQR():
+    link = request.args.get('link')
+    img = qrcode.make(link)
 
-    if not os.path.exists(penyimpanan):
-        os.makedirs(penyimpanan)
+    buffer = BytesIO()
+    img.save(buffer, format="PNG")
+    buffer.seek(0)
 
-    file_path = os.path.join(penyimpanan,namaFIle)
-    return file_path
-
-
-@app.route('/api/data', methods=['GET'])
-def get_data():
-    return jsonify({"message": "Data dari Flask!"})
-
-@app.route('/qrcodes/<links>')
-def makeQR(links):
-    data = f"{links}"
-    img = qrcode.make(data)
-    img.save(pengaturan())
-
-
+    return send_file(buffer, mimetype='image/png')
+    
 if __name__ == '__main__': 
     app.run(debug = True, port=5000) 
