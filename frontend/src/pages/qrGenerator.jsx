@@ -10,6 +10,26 @@ function QrGenerator(){
 
     const [inputValue, setInputValue] = useState("")
     const [qrImage, setQrImage] = useState("")
+
+    const handleDownload = async () =>{
+        try {
+        const response = await fetch(qrImage);
+        const blob = await response.blob();
+        const blobUrl = URL.createObjectURL(blob);
+
+        const link = document.createElement("a");
+        link.href = blobUrl;
+        link.download = "Qr-code Generator.png";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        URL.revokeObjectURL(blobUrl); 
+    } catch (error) {
+        console.error("Gagal download:", error);
+    }
+    }
+
     return(
         <>
         <Nav/>
@@ -47,7 +67,7 @@ function QrGenerator(){
                     </div>
                     <div className="place">
                         {qrImage ? (
-                            <img src={qrImage} alt="qr-codes"/>
+                            <img src={qrImage}  className="w" alt="qr-codes"/>
                         ): (
                             <>
                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -57,13 +77,23 @@ function QrGenerator(){
                             </>
                         )}                 
                     </div>
+                    { inputValue.trim() !== "" &&(
+                       <button type="button" className="generate" onClick={handleDownload}>Download</button>
+                    ) }
+
                 </div>
 
             </div>
+
+
         </div>
         <Footer/>
         </>
     )
 }
+
+
+
+
 
 export default  QrGenerator

@@ -168,6 +168,22 @@
     fill: #C4AFA3;
 }
 
+.generate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    padding: 0 20px;
+    background: #3B1F0A;
+    color: #FAF7F2;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
 @media (max-width: 768px) {
     .containerr{
         display: flex;
