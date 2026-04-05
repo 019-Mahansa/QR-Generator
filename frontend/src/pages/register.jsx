@@ -14,7 +14,7 @@ function Register() {
       <div className="login-page">
         <div className="login-wrapper">
 
-          {/* Left Panel */}
+
           <div className="login-left">
             <div className="login-brand">
               <div className="login-brand-icon">
@@ -38,11 +38,11 @@ function Register() {
             <p className="login-copyright">© 2026 Digito. All rights reserved.</p>
           </div>
 
-          {/* Right Panel */}
+
           <div className="login-right">
             <h1 className="login-title">Register</h1>
 
-            {/* Username */}
+
             <div className="login-field">
               <label htmlFor="username">Username</label>
               <InputText
@@ -53,7 +53,6 @@ function Register() {
               />
             </div>
 
-            {/* Password */}
             <div className="login-field">
               <label htmlFor="password">Password</label>
               <div className="login-password-wrapper">
@@ -85,7 +84,6 @@ function Register() {
               </div>
             </div>
 
-            {/* Confirm Password */}
             <div className="login-field">
               <label htmlFor="confirmPassword">Confirm your Password</label>
               <div className="login-password-wrapper">

@@ -36,7 +36,6 @@ function Login() {
           <p className="login-copyright">© 2026 digito. All rights reserved.</p>
         </div>
 
-        {/* Right Panel */}
         <div className="login-right">
           <h1 className="login-title">Login</h1>
           <p className="login-subtitle">
