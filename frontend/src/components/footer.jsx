@@ -5,7 +5,7 @@ function Footer(){
         <>
         <footer>
         <div className="containers">
-                {/* <div className="one">
+                <div className="one">
                     <li className="Title">Title</li>
                     <li>Item1</li>
                     <li>Item2</li>
@@ -28,7 +28,7 @@ function Footer(){
                     <li>item1</li>
                     <li>item2</li>
                     <li>item3</li>
-                </div> */}
+                </div>
         </div>
         <div className="licensi">
             <h1>2026 All right deserved</h1>
